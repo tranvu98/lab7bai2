@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    background-color: white;
+}
+
+.subnav {
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+    height: 30px;
+    line-height: 30px;
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    width: 40%;
+}
+
+.subnav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+    margin: 0;
+}
+
+.subnav ul li a, .subnav ul li i {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.subnav ul li a {
+    width: 100%;
+    display: block;
+}
+
+.subnav ul li a:hover {
+    color: orange;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: unset;
+}
+
+#wrapper nav div, #wrapper nav form i {
+    background-color: rgb(4, 194, 4);
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.dropdown-menu {
+    background-color: rgb(4, 194, 4);
+}
+
+#wrapper nav div a {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+#wrapper nav div a:hover {
+    color: orange;
+}
+
+form {
+    padding: 0 20px;
+}
+
+form div {
+    margin-left: 30px;
+}
+
+#wrapper nav {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.cart{
+    height: 1000px;
+}
+@media (min-width: 1025px) {
+.h-custom {
+height: 100vh !important;
+}
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+font-size: 1rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+top: 13px;
+}
+
+.bg-grey {
+background-color: #eae8e8;
+}
+
+@media (min-width: 992px) {
+.card-registration-2 .bg-grey {
+border-top-right-radius: 16px;
+border-bottom-right-radius: 16px;
+}
+}
+
+@media (max-width: 991px) {
+.card-registration-2 .bg-grey {
+border-bottom-left-radius: 16px;
+border-bottom-right-radius: 16px;
+}
+}
+
+.white {
+    background-color: white;
+    margin-top: 10px;
+}
+
+.white h6 {
+    font-weight: bold;
+}
+
+.white .bold {
+    font-weight: bold;
+}
+
+.white .email {
+    width: 100%;
+    padding: 4px 0;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.white .email:hover {
+    color: white;
+    background-color: orange;
+}
+
+.white .subs {
+    width: 100%;
+    padding: 4px 0;
+    background-color: rgb(2, 165, 2);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.white .subs:hover {
+    color: white;
+    background-color: orange;
+}
+
+.social {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+.fb {
+    background-color: gray;
+    border-radius: 10px;
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.tw {
+    background-color: gray;
+    border-radius: 10px;
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.gg {
+    background-color: gray;
+    border-radius: 10px;
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.yt {
+    background-color: gray;
+    border-radius: 10px;
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: rgb(220, 220, 220);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay i {
+    font-size: 24px;
+}
+
+@media screen and (max-width:992px) {
+    .left {
+        width: 30%;
+    }
+
+    .right {
+        width: 50%;
+    }
+
+    form {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .subnav {
+        height: auto;
+        justify-content: start;
+    }
+
+    .subnav ul {
+        width: 100%;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .right {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .subnav {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .subnav ul {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .white {
+        text-align: center;
+    }
+}
